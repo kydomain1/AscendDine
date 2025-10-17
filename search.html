@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - Ascend & Dine</title>
+    <meta name="description" content="Search articles on Ascend & Dine">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">Ascend & Dine</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="search.html" class="nav-link active">Search</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Search Hero -->
+    <section class="hero search-hero">
+        <div class="container">
+            <h1 class="hero-title">Find Your Inspiration</h1>
+            <p class="hero-subtitle">Search through our curated collection of articles</p>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-page-section">
+        <div class="container">
+            <!-- Main Search Box -->
+            <div class="search-box-large">
+                <input 
+                    type="text" 
+                    id="searchInputLarge" 
+                    placeholder="Search for articles, topics, or keywords..." 
+                    class="search-input-large"
+                    autofocus>
+                <button class="search-btn-large" id="searchBtnLarge">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    Search
+                </button>
+            </div>
+
+            <!-- Quick Filters -->
+            <div class="quick-filters">
+                <span class="filter-label">Quick Filters:</span>
+                <div class="categories">
+                    <button class="category-btn active" data-category="all">All Categories</button>
+                    <button class="category-btn" data-category="fashion">Fashion & Accessories</button>
+                    <button class="category-btn" data-category="health">Health & Beauty</button>
+                    <button class="category-btn" data-category="home">Home & Garden</button>
+                    <button class="category-btn" data-category="travel">Travel & Accommodation</button>
+                    <button class="category-btn" data-category="finance">Finance & Insurance</button>
+                    <button class="category-btn" data-category="food">Food & Beverage</button>
+                </div>
+            </div>
+
+            <!-- Search Stats -->
+            <div class="search-stats" id="searchStats">
+                <p class="stats-text"></p>
+            </div>
+
+            <!-- Results Grid -->
+            <div class="search-results">
+                <div class="articles-grid" id="searchResultsGrid">
+                    <!-- Results will be loaded here -->
+                </div>
+            </div>
+
+            <!-- No Results Message -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <div class="no-results-content">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <h2>No Results Found</h2>
+                    <p>We couldn't find any articles matching your search. Try different keywords or browse by category.</p>
+                    <a href="index.html" class="btn-back-home">Back to Home</a>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination" id="searchPagination" style="display: none;">
+                <button class="page-btn" id="prevBtnSearch" disabled>Previous</button>
+                <div class="page-numbers" id="pageNumbersSearch"></div>
+                <button class="page-btn" id="nextBtnSearch">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Articles -->
+    <section class="popular-section">
+        <div class="container">
+            <h2 class="section-title-center">Popular Articles</h2>
+            <div class="related-grid" id="popularArticles">
+                <!-- Popular articles will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Ascend & Dine</h3>
+                    <p class="footer-text">Elevating everyday living through curated content and authentic recommendations.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="search.html">Search</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" class="social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://pinterest.com" target="_blank" class="social-link" aria-label="Pinterest">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M8 12c0-2.5 2-4.5 4.5-4.5S17 9.5 17 12c0 1.5-1 2.5-2 2.5s-1.5-1-1.5-1c0 0-.5 2-1 3s-1.5 1-1.5 1"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ascend & Dine. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
