@@ -5,6 +5,95 @@
 // === Articles Data ===
 const articles = [
     {
+        id: 6,
+        title: "Go Live with StubHub",
+        category: "travel",
+        categoryName: "Travel & Accommodation",
+        date: "October 3, 2025",
+        excerpt: "Discover how StubHub transforms your event experience with secure ticket purchasing, seamless travel integration, and real-time local event discovery.",
+        image: "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&h=600&fit=crop",
+        content: `
+            <p>In an era where experiences matter more than possessions, finding the perfect event tickets shouldn't be complicated. StubHub, the world's leading secondary ticket marketplace, has revolutionized how we discover, purchase, and experience live events. Whether you're planning to see your favorite artist, catch a championship game, or discover a hidden gem in your local music scene, StubHub makes it effortless to go live with unforgettable moments.</p>
+
+            <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&h=500&fit=crop" alt="Live concert experience">
+
+            <h2>Why StubHub Stands Out</h2>
+            <p>What sets StubHub apart isn't just its vast inventory—it's the peace of mind that comes with every transaction. The platform's FanProtect Guarantee ensures that every ticket purchase is legitimate and protected. If something goes wrong, you're covered. This commitment to security has made StubHub the trusted choice for millions of event-goers worldwide.</p>
+
+            <p>The platform offers an incredible range of events: from sold-out concerts and Broadway shows to major league sports and intimate local performances. No matter what you're passionate about, StubHub connects you with the experiences that matter most.</p>
+
+            <div class="product-recommendation">
+                <h3>StubHub: Your Gateway to Live Events</h3>
+                <p>With millions of tickets available for events across the globe, StubHub makes it easy to find exactly what you're looking for. Their intuitive platform allows you to browse by category, location, or date, ensuring you never miss out on the experiences that excite you.</p>
+                <a href="https://www.stubhub.com/" target="_blank" class="product-link">Explore StubHub</a>
+            </div>
+
+            <h2>Seamless Travel Integration</h2>
+            <p>One of StubHub's most innovative features is its partnership with Booking.com, creating a seamless experience from ticket purchase to travel planning. After securing your event tickets, you can immediately book hotels, flights, and rental cars—all in one place. This integration transforms event planning from a multi-step process into a single, streamlined experience.</p>
+
+            <p>Imagine this: you find tickets to a music festival in another city. Instead of juggling multiple websites and tabs, StubHub guides you through the entire journey. Book your tickets, reserve a hotel near the venue, arrange transportation, and even discover local restaurants—all without leaving the platform. This holistic approach to event planning saves time and reduces stress, letting you focus on the excitement ahead.</p>
+
+            <h2>Discover Local Events in Real-Time</h2>
+            <p>StubHub's Explore feature is a game-changer for spontaneous event-goers. This innovative tool helps you discover local events happening around you in real-time. Whether you're looking for something to do tonight or planning your weekend, Explore surfaces concerts, comedy shows, sports games, and more based on your location.</p>
+
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&h=500&fit=crop" alt="Local events and community gatherings">
+
+            <p>The feature is particularly valuable for travelers exploring new cities. Instead of relying on tourist guides or hoping to stumble upon something interesting, Explore puts the best local events at your fingertips. It's like having a local insider who knows exactly what's happening and where to find it.</p>
+
+            <div class="product-recommendation">
+                <h3>Explore Feature: Never Miss a Local Event</h3>
+                <p>StubHub's Explore feature uses your location to show you nearby events happening now or soon. Perfect for discovering hidden gems and supporting local artists and venues. It's available on both the website and mobile app for on-the-go discovery.</p>
+            </div>
+
+            <h2>Mobile-First Experience</h2>
+            <p>In today's fast-paced world, convenience is key. StubHub's mobile app brings the entire ticket marketplace to your pocket. Browse events, compare prices, purchase tickets, and manage your orders—all from your smartphone. The app's clean interface and intuitive navigation make it easy to find what you're looking for, even when you're on the move.</p>
+
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=500&fit=crop" alt="Mobile ticket purchasing">
+
+            <p>The mobile experience is particularly powerful when combined with the Explore feature. You can be walking through a neighborhood, check what's happening nearby, and secure tickets instantly—all within minutes. This level of accessibility transforms how we interact with live events, making spontaneity and discovery part of the experience.</p>
+
+            <h2>Safe and Secure Transactions</h2>
+            <p>Security is paramount when purchasing tickets online. StubHub's FanProtect Guarantee provides comprehensive protection for both buyers and sellers. For buyers, this means guaranteed valid tickets, on-time delivery, and full refunds if an event is canceled. For sellers, it means secure payment processing and protection against fraudulent transactions.</p>
+
+            <p>The platform uses advanced verification systems to ensure ticket authenticity. Every listing is carefully reviewed, and the company maintains strict policies against fraudulent activity. This commitment to security has built trust among millions of users who rely on StubHub for their most important events.</p>
+
+            <h2>Tips for Getting the Best Experience</h2>
+            <p>To make the most of StubHub, consider these strategies:</p>
+            <ul>
+                <li><strong>Set Price Alerts:</strong> For high-demand events, set alerts to be notified when tickets become available at your preferred price point.</li>
+                <li><strong>Check Multiple Dates:</strong> If an event has multiple showtimes, compare prices across different dates—you might find better deals on less popular times.</li>
+                <li><strong>Use the Mobile App:</strong> The app often provides exclusive deals and faster checkout for last-minute purchases.</li>
+                <li><strong>Explore Local Events:</strong> Don't just look for big-name acts—use the Explore feature to discover amazing local talent and intimate venues.</li>
+                <li><strong>Plan Ahead:</strong> For major events, booking early often means better selection, though last-minute deals can sometimes be found.</li>
+            </ul>
+
+            <h2>Building Memories, One Event at a Time</h2>
+            <p>At its core, StubHub is about more than just tickets—it's about creating memories. Whether it's your first concert, a milestone celebration, or a spontaneous night out, the platform removes barriers between you and the experiences you want. With secure transactions, seamless travel integration, and innovative discovery tools, StubHub empowers you to live fully and experience deeply.</p>
+
+            <p>The future of event-going is here, and it's more accessible, secure, and integrated than ever before. With StubHub, you're not just buying tickets—you're investing in moments that will stay with you long after the lights go down.</p>
+        `,
+        products: [
+            {
+                name: "StubHub Ticket Marketplace",
+                brand: "StubHub",
+                description: "Secure ticket purchasing with FanProtect Guarantee",
+                link: "https://www.stubhub.com/"
+            },
+            {
+                name: "StubHub Explore Feature",
+                brand: "StubHub",
+                description: "Real-time local event discovery",
+                link: "https://www.stubhub.com/"
+            },
+            {
+                name: "StubHub + Booking.com Integration",
+                brand: "StubHub",
+                description: "Complete event and travel planning in one place",
+                link: "https://www.stubhub.com/"
+            }
+        ]
+    },
+    {
         id: 1,
         title: "Essential Minimalist Wardrobe: Quality Over Quantity",
         category: "fashion",
